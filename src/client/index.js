@@ -7,7 +7,7 @@ import bodyParser from 'body-parser'
 var app = express()
 
 
-
+// Add Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -23,7 +23,7 @@ router.get('/user', function(req, res) {
 router.get('/calendar', function(req, res) {
     res.json(getCal());
 });
-router.get('/user-calendar', function(req, res) {
+router.get('/user-calendar', function(req, res) { // calendar route
     res.json(getUser_Calendar());
 });
 
