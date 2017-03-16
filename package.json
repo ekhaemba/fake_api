@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"babel src --out-dir dest",
-    "start":"node dest/client/index.js"
-    },
+    "build": "babel src --out-dir dest",
+    "start": "node dest/client/index.js"
+  },
   "private": true,
   "author": "ekhaemba",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.1",
     "express": "^4.15.2",
     "json-schema-faker": "^0.4.0"
   },
